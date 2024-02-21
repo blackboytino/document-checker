@@ -46,8 +46,8 @@ export default function Home() {
             </ul>
           </div>
           <div className="flex">
-            <img src="/images/babcockLogo.png" alt=""  className="h-[80px]"/>
-          <a className="btn btn-ghost text-xl pt-[29px] text-blue-600">BUREC</a>
+            <a href="/"><img src="/images/babcockLogo.png" alt=""  className="h-[80px]"/></a>
+          <a href="/" className=" text-[60px] mt-[9px] text-blue-600">BUREC</a>
           </div>
           
         </div>
