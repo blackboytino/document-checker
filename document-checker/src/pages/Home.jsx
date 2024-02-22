@@ -1,87 +1,83 @@
 import React from "react";
 import "../index.css";
+import Navbar from "./components/Navbar";
 export default function Home() {
   return (
-    <div className="bg-white">
-      <div className="navbar  text-black">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+    <div className="">
+      <Navbar className="" />
+      {/* Image section */}
+      <div className="text-black pl-[40px] bg-[url('/images/readingMan.jpg')] bg-cover bg-center h-screen">
+        <div className="lg:pt-[200px] lg:text-[40px] block pr-[960px]">
+          <p>Get Quality review and feedbacks from in-house professionals</p>
+        </div>
+        <button className="bg-blue-500 px-6 py-3 mt-10 text-white">
+          Get reviewed today
+        </button>
+      </div>
+      {/* Price section */}
+      <div className="flex items-center justify-center bg-slate-100">
+        <div className="bg-white w-[800px] h-screen pt-[50px] mt-[50px] mb-[50px]">
+          <p className="text-[100px] text-black pl-[280px]">Plans</p>
+          <div className="flex gap-[100px]">
+            <div className="ml-[50px] outline outline-1 px-[20px] py-[20px]">
+              <p className="text-[30px] text-slate-600">Monthly</p>
+              <p>Review your documents monthly</p>
+              <p className="text-[60px] text-yellow-500">N15,000</p>
+              <button className="bg-blue-600 text-white px-9 mt-[50px] py-4 ml-[50px] rounded-[8px] shadow hover:bg-blue-500">
+                Subscribe
+              </button>
             </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-400 rounded-box w-52"
-            >
-              <li>
-                <a>Home</a>
-              </li>
-              <li>
-                <a>Login</a>
-                <ul className="p-2">
-                  <li>
-                    <a>As Researcher</a>
-                  </li>
-                  <li>
-                    <a>As Reviewer</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>About</a>
-              </li>
-            </ul>
+
+            <div className="outline outline-1 px-[20px] py-[20px] mr-[50px]">
+              <p className="text-[30px] text-slate-600">Yearly</p>
+              <p className="block pr-[0px]">Review your documents monthly</p>
+              <p className="text-[60px] text-yellow-500">N100,000</p>
+              <button className="bg-blue-600 text-white px-9 mt-[50px] py-4 ml-[60px] rounded-[8px] shadow hover:bg-blue-500">
+                Subscribe
+              </button>
+            </div>
           </div>
-          <div className="flex">
-            <a href="/"><img src="/images/babcockLogo.png" alt=""  className="h-[80px]"/></a>
-          <a href="/" className=" text-[60px] mt-[9px] text-blue-600">BUREC</a>
+        </div>
+        {/* About section */}
+      </div>
+      <div className="h-screen">
+        <div className="">
+          <div className="flex items-center justify-center">
+            <p className="text-[100px] text-black">About</p>
           </div>
-          
+          <div className="block px-[50px] text-[28px]">
+            <p>
+              Welcome to BUREC, your trusted destination for professional
+              document reviews. At BUREC, we understand the importance of
+              accuracy, clarity, and precision in written content. Whether
+              you're a student, researcher, professional, or business owner,
+              we're here to help ensure that your documents meet the highest
+              standards of quality. Our team of experienced reviewers consists
+              of experts from various fields, including academia, business,
+              journalism, and more. With their specialized knowledge and
+              attention to detail, they meticulously examine every aspect of
+              your document, providing valuable feedback and suggestions for
+              improvement. From academic papers and research articles to
+              business reports and marketing materials, we review a wide range
+              of documents with the utmost care and expertise. Our goal is to
+              help you enhance the effectiveness and impact of your written
+              communication. At BUREC, we pride ourselves on our commitment to
+              excellence, confidentiality, and customer satisfaction. Whether
+              you're seeking proofreading, editing, or comprehensive feedback,
+              you can trust us to deliver professional results that exceed your
+              expectations. Join countless satisfied clients who have entrusted
+              their documents to us and experienced the difference that our
+              expert reviews can make. Let BUREC be your partner in achieving
+              success through exceptional written content.
+            </p>
+          </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 ">
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <details>
-                <summary>Login</summary>
-                <ul className="p-2">
-                  <li>
-                    <a className="text-white">As Researcher</a>
-                  </li>
-                  <li>
-                    <a className="text-white">As Reviewer</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>About</a>
-            </li>
-          </ul>
-        </div>
-        <div className="navbar-end">
-          <a className="btn text-white bg-blue-600 hover:bg-blue-500 border-none">Submit a proposal</a>
-        </div>
+
+    
       </div>
-      {/* Section */}
-      <div>
-       <h1></h1>
-      </div>
+      <footer className="">
+
+      </footer>
     </div>
   );
 }
